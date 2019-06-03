@@ -11,4 +11,8 @@ Features
   - Detect Errors
   - File management
   - Device Management
-  - 
+  - Interrupt Handling
+  - MultiTasking
+  - MultiProgramming
+  - Batch Processing
+  - User Management
