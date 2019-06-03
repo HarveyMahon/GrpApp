@@ -13,6 +13,7 @@ Features
   - Device Management
   - Interrupt Handling
   - MultiTasking
+    - Allows a user to perform more than one computer task such as the operation of an application program at a time. The operating system is able to keep track of where you are in these tasks and go from one to the other without losing information
   - MultiProcessing 
     - The use of two or more CPUs within a single computer system. These multiple CPUs are in a close communication sharing the computer bus, memory, and other peripheral devices
   - Multiprogramming
