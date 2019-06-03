@@ -16,5 +16,4 @@ Features
   - MultiProgramming
   - Batch Processing
   - User Management
-BROOOOOOOOOOOOOOOOOOOOOOO
-Testing testing
+
