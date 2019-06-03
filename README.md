@@ -1,4 +1,4 @@
-# GrpApp
+# GroupApp
 Computer Science Competition Project
 ----- Operating System -----
 Features
