@@ -3,7 +3,7 @@ Computer Science Competition Project
 ----- Operating System -----
 Features
   - User Interface
-    - 
+    - Facial ID
   - Security
   - Apps
     - Text Editor and such
