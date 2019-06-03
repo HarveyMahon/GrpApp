@@ -13,7 +13,7 @@ Features
   - Device Management
   - Interrupt Handling
   - MultiTasking
-  - MultiProgramming (
+  - MultiProgramming (Can I change stuff)
   - Batch Processing
   - User Management
   - 
