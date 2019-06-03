@@ -16,4 +16,5 @@ Features
   - MultiProgramming 
   - Batch Processing
   - User Management
-
+Specification
+  - Developed in Java
