@@ -1,6 +1,8 @@
 # GrpApp
 Computer Science Competition Project
+
 ----- Operating System -----
+
 Features
   - User Interface
     - Facial ID
