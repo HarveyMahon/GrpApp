@@ -13,7 +13,9 @@ Features
   - Device Management
   - Interrupt Handling
   - MultiTasking
-  - MultiProgramming (Can I change stuff)
+  - MultiProgramming 
   - Batch Processing
   - User Management
-  - 
+  
+  
+  - Written in Java
