@@ -1,11 +1,9 @@
 # GrpApp
 Computer Science Competition Project
-
 ----- Operating System -----
-
 Features
   - User Interface
-    - Facial ID
+    - 
   - Security
   - Apps
     - Text Editor and such
@@ -15,9 +13,7 @@ Features
   - Device Management
   - Interrupt Handling
   - MultiTasking
-  - MultiProgramming 
+  - MultiProgramming (The use of two or more CPUs within a single computer system. These multiple CPUs are in a close communication sharing the computer bus, memory, and other peripheral devices)
   - Batch Processing
   - User Management
 
-Specification
-  - Developed in Java
