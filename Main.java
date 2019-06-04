@@ -11,9 +11,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
-import java.util.Date;
-import java.util.Timer;
-
 public class Main extends Application {
     @FXML
     private TextArea testText;
@@ -22,33 +19,69 @@ public class Main extends Application {
 
     boolean shiftHeld = false;
     long startTime = 0L;
+    long endTime = 0L;
     long timePassed = 0L;
-    long keysPressed = 0L;
+    int keysPressed = 0;
+
+    boolean mistakeMade = false;
+    String testString = "Peter Piper picked a peck of pickled peppers";
+    String userString = "";
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Touch Typing System");
         primaryStage.setScene(new Scene(root, 300, 275));
-        //this calculates the speed of the typer and outputs it to the console, this is fully functional and calculates words per minute
         root.addEventFilter(KeyEvent.KEY_PRESSED, event -> {
-            if (startTime == 0L) {
-                startTime = System.currentTimeMillis();
+            //if the user is still entering the test string
+            if (mistakeMade) {
+                System.out.println("error");
+                java.awt.Toolkit.getDefaultToolkit().beep();
             }
-            timePassed = System.currentTimeMillis() - startTime;
-            if (event.getCode() == KeyCode.BACK_SPACE) {
-                --keysPressed;
+            if (keysPressed < testString.length() || mistakeMade) {
+                if (startTime == 0L) {
+                    startTime = System.currentTimeMillis();
+                }
+                timePassed = System.currentTimeMillis() - startTime;
+                if (event.getCode() == KeyCode.BACK_SPACE) {
+                    System.out.println(keysPressed != 0);
+                    if (keysPressed != 0) {
+                        --keysPressed;
+                        userString = userString.substring(0, userString.length()-1);
+                    }
+                    if (userString.charAt(keysPressed-1) == testString.charAt(keysPressed-1)) {
+                        mistakeMade = false;
+                    }
+                } else if (event.isShiftDown() && event.getCode() != KeyCode.SHIFT) {
+                    userString += event.getText().toUpperCase();
+                    if (event.getText().toUpperCase().equals(((Character)testString.charAt(keysPressed)).toString())) {
+                        System.out.println("Yes");
+                        mistakeMade = false;
+                    }
+                    else {
+                        mistakeMade = true;
+                    }
+                    ++keysPressed;
+                } else if (event.getCode() != KeyCode.SHIFT) {
+                    userString += event.getText();
+                    if (event.getText().equals(((Character)testString.charAt(keysPressed)).toString())) {
+                        System.out.println("Yes");
+                        mistakeMade = false;
+                    }
+                    else {
+                        mistakeMade = true;
+                    }
+                    ++keysPressed;
+                }
+
+                System.out.println(testString);
+                System.out.println(userString);
             }
-            else if (event.isShiftDown() && event.getCode() != KeyCode.SHIFT) {
-                ++keysPressed;
+            if (keysPressed == testString.length() && !mistakeMade) {
+                if (endTime == 0L) endTime = System.currentTimeMillis();
+                String fin = ((Integer) ((Float) ((((float) keysPressed / ((float)(endTime - startTime) / 1000f)) * 60f) / 4.5f)).intValue()).toString();
+                System.out.printf("Task successful at a rate of %s WPM\n", fin);
             }
-            else if (event.getCode() != KeyCode.SHIFT){
-                ++keysPressed;
-            }
-            System.out.println(timePassed);
-            System.out.println(keysPressed);
-            String fin = ((Float)((((float)keysPressed/((float)timePassed/1000f))*60f)/4.5f)).toString();
-            System.out.println(fin);
         });
         primaryStage.show();
     }
