@@ -1,6 +1,9 @@
 # GroupApp
+
 Computer Science Competition Project
+
 ----- Touch Typing App -----
+
 FEATURES 
 - Calculates the user's typing speed in wpm based on how many character's that they have entered
 - Have a smooth UI that the user can use the program easily
