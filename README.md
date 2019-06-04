@@ -18,7 +18,8 @@ MODULES
   - Harvey
 - Calculating user score based off of 
   - Elsa + Alice
-- 
+- Devloping the UI and Main.java
+  - Thomas + Marcus
 
 ASSIGNED JOBS
 - Team leader 
