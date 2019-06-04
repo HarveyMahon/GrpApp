@@ -11,6 +11,15 @@ FEATURES
   - and personnally uploaded files
 - increasing difficulty based on the performance of the user
 
+MODULES
+- Text handling module
+  - Mike + Gleb
+- Calculating score accuracy and speed
+  - Harvey
+- Calculating user score based off of 
+  - Elsa + Alice
+- 
+
 ASSIGNED JOBS
 - Team leader 
   - Elsa
@@ -18,6 +27,8 @@ ASSIGNED JOBS
   - Thomas
 - Lead QA
   - Alice
+- Content Developer
+  - Mike
 - Programming pairs
   - Thomas and Marcus
   - Gleb and Mike
