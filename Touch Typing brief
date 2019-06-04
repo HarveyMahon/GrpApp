@@ -1,0 +1,54 @@
+You have been asked to make a touch typing application with the following requirements. Everyone in the team will be given the same score. 
+
+The score will be based on:
+
+The requirements completed.
+The quality of the product (ease of use, polish and lack of bugs).
+The involvement of everyone in the team. You will be expected to prove this!
+Necessary Requirements
+
+1. Must have at least ten built in tasks.
+
+1.1 Each task must add new keys.
+
+1.2 Each task must build upon the last.
+
+1.3 For each task users should be expected to type the text on screen.  
+
+1.4 If users press an incorrect key...
+
+1.4.1 There should be a beep.
+
+1.4.2 The incorrect key press should not be displayed on screen.
+
+1.4.3 A count should be kept.
+
+1.5 If users press a correct key there should be a typing sound.
+
+1.6 Users can complete tasks as many times as they want in any order.
+
+2. Users must be able to add their own tasks.
+
+2.1 Users should be able to import a text file.
+
+2.2 That task should be automatically available when the system is next loaded.
+
+3. Each task should be scored.
+
+3.1 Score out of 1000 should be based on accuracy and time taken. (You can choose the formula but the full range of marks should be possible.)
+
+3.2 The highest score achieved should be visible on the task selection screen.
+
+3.3 When a task is completed there should be a congratulations screen.
+
+3.3.1 It should state if they have a new high score...
+
+3.3.2 Or how close they are to the high score.
+
+3.3.3 A printable certificate.
+
+Desirable Requirements
+
+4. The program can have different users with scores stored for each (no need for passwords).
+
+5. Charts showing progress over time.
