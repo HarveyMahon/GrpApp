@@ -14,7 +14,7 @@ Computer Science Competition Project
 ### MODULES
 - Text handling module
   - Mike + Gleb
-- ~~Calculating score accuracy and speed~~ -complete, see Scoring.java-
+- ~~Calculating score accuracy and speed~~ complete, see Scoring.java
   - Harvey
 - Calculating user score based off of task difficulty and task score
   - Elsa + Alice
