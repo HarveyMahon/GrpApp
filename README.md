@@ -2,26 +2,26 @@
 
 Computer Science Competition Project
 
-#Touch Typing App
+## Touch Typing App
 
-FEATURES 
+### FEATURES 
 - Calculates the user's typing speed in wpm based on how many character's that they have entered
 - Have a smooth UI that the user can use the program easily
 - Select text from sources such as shakespeare
   - and personnally uploaded files
 - increasing difficulty based on the performance of the user
 
-MODULES
+### MODULES
 - Text handling module
   - Mike + Gleb
-- Calculating score accuracy and speed -complete, see Scoring.java-
+- ~~Calculating score accuracy and speed~~ -complete, see Scoring.java-
   - Harvey
 - Calculating user score based off of task difficulty and task score
   - Elsa + Alice
 - Devloping the UI and Main.java
   - Thomas + Marcus
 
-ASSIGNED JOBS
+### ASSIGNED JOBS
 - Team leader 
   - Elsa
 - Head designer
