@@ -2,7 +2,7 @@
 
 Computer Science Competition Project
 
------ Touch Typing App -----
+#Touch Typing App
 
 FEATURES 
 - Calculates the user's typing speed in wpm based on how many character's that they have entered
