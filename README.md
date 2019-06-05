@@ -14,9 +14,9 @@ FEATURES
 MODULES
 - Text handling module
   - Mike + Gleb
-- Calculating score accuracy and speed
+- Calculating score accuracy and speed -complete, see Scoring.java-
   - Harvey
-- Calculating user score based off of 
+- Calculating user score based off of task difficulty and task score
   - Elsa + Alice
 - Devloping the UI and Main.java
   - Thomas + Marcus
