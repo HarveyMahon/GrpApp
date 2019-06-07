@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    @Override
+    //@Override
     public static int charactersTyped;
     public static double accuracy;
 
