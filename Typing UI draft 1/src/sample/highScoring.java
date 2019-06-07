@@ -1,10 +1,13 @@
 package sample;
 
+import static sample.Main.charactersTyped;
+import static sample.Main.accuracy;
+
 public class highScoring {
     int highScore = -100; //Setting it to be lowest possible
 
     public static void main(String[] args) {
-        int score = calcScore(charactersTyped, accuracy);
+        int score = Scoring.calcScore(charactersTyped, accuracy);
     }
     public int Scores(int score) {
         if (score > highScore) {
