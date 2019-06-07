@@ -1,12 +1,12 @@
 package sample;
 
-<<<<<<< HEAD
+
 import static sample.Main.charactersTyped;
 import static sample.Main.accuracy;
-=======
+
 import java.util.ArrayList;
 import java.util.List;
->>>>>>> a81c66064e67d96d460a1fd6369308294d964212
+
 
 public class highScoring {
     int highScore = -100; //Setting it to be lowest possible
