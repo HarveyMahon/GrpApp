@@ -3,9 +3,7 @@ package sample;
 public class Scoring {
 
     public static void main(String[] args) {
-        // test data is my typing speed at 100% accuracy
-        // this data will not be here in the real program
-        System.out.println(calcScore(320, 100.0));
+
     }
 
     //this func assumes that the length of the task is 1 min and that accuracy is given as a percentage
@@ -35,6 +33,8 @@ public class Scoring {
         accuracy /= 100;
 
         //rounding the result in order to display the score
+
+
 
         int score = (int)Math.round((charactersTyped * 2) * accuracy);
         return score;
