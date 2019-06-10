@@ -10,7 +10,7 @@ import com.sun.scenario.effect.ImageData;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class Main {
+public class Certificate {
 
     public static void main(String[] args) throws Exception {
         // write your code here
