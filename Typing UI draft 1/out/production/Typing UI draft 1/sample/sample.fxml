@@ -23,14 +23,14 @@
   </rowConstraints>
    <children>
       <Button fx:id="ButCancel" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-      <TextArea fx:id="txtAreaDisplay" prefHeight="200.0" prefWidth="430.0" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
-         <padding>
+      <TextArea fx:id="txtAreaDisplay" prefHeight="200.0" prefWidth="430.0" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <GridPane.margin>
             <Insets right="5.0" />
-         </padding></TextArea>
-      <TextArea fx:id="txtAreaInput" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="2">
-         <padding>
+         </GridPane.margin></TextArea>
+      <TextArea fx:id="txtAreaInput" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="2">
+         <GridPane.margin>
             <Insets right="5.0" />
-         </padding></TextArea>
+         </GridPane.margin></TextArea>
       <Label fx:id="lblTime" text="Time Left" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Label fx:id="lblWords" text="Typing speed (WPM)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Label fx:id="lblErrors" text="Errors/Mistyped words" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
