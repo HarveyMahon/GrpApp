@@ -28,21 +28,22 @@ public class Certificate {
         BaseFont font = BaseFont.createFont(BaseFont.TIMES_ROMAN, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
         BaseFont fontI = BaseFont.createFont(BaseFont.TIMES_ITALIC, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
         //setting the pdf decorations to make it look better
-        Image tlCorner = Image.getInstance("src\\cornerDeco.png");
+        String imageSrc = "src\\cert bg 1.jpg";
+        Image tlCorner = Image.getInstance(imageSrc);
         tlCorner.setAbsolutePosition(0, 717);
         certificate.add(tlCorner);
 
-        Image trCorner = Image.getInstance("src\\cornerDeco.png");
+        Image trCorner = Image.getInstance(imageSrc);
         trCorner.setAbsolutePosition(470, 717);
         trCorner.setRotationDegrees(270);
         certificate.add(trCorner);
 
-        Image brCorner = Image.getInstance("src\\cornerDeco.png");
+        Image brCorner = Image.getInstance(imageSrc);
         brCorner.setAbsolutePosition(0,0 );
         brCorner.setRotationDegrees(90);
         certificate.add(brCorner);
 
-        Image blCorner = Image.getInstance("src\\cornerDeco.png");
+        Image blCorner = Image.getInstance(imageSrc);
         blCorner.setAbsolutePosition(470, 0);
         blCorner.setRotationDegrees(180);
         certificate.add(blCorner);
