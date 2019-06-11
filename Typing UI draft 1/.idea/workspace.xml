@@ -64,7 +64,7 @@
     <session id="588621034">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -84,12 +84,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -123,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Certificate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="-272">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,10 +133,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/TextGenerator.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Selection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3468">
-              <caret line="211" column="51" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="51" />
+            <state relative-caret-position="238">
+              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,9 +193,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="975" />
-    <option name="height" value="1050" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -224,13 +227,6 @@
             </path>
             <path>
               <item name="Typing UI draft 1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Typing UI draft 1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="TextGenerator.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Typing UI draft 1" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -250,7 +246,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560164710011" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560171868496" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../itextpdf-5.5.13.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -360,7 +356,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2147651" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -448,9 +443,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/TextGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="211" column="51" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Certificate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="-272">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -458,10 +460,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/TextGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3468">
-          <caret line="211" column="51" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="51" />
+        <state relative-caret-position="238">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
