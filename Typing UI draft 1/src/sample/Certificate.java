@@ -14,12 +14,12 @@ public class Certificate {
 
     public static void main(String[] args) throws Exception {
         // write your code here
-        Document certificate = createCertificate("Easy", "Harvey", 71, 92);
+        Document certificate = createCertificate("Easy", "Harvey", 71);
         Process p = Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler Certificate.pdf");
         p.waitFor();
     }
 
-    public static Document createCertificate(String difficulty, String userName, Integer wpm, Integer accuracy) throws Exception {
+    public static Document createCertificate(String difficulty, String userName, Integer wpm) throws Exception {
         Document certificate = new Document();
         PdfWriter writer = PdfWriter.getInstance(certificate, new FileOutputStream("Certificate.pdf"));
 
