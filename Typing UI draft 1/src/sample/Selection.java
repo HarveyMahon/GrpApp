@@ -27,8 +27,8 @@ public class Selection {
         - Very Hard
         
         Each level has 3 text files, which gets generated randomly 
-        */
-
+        */}
+    public void textSelection(){
         if (pressedHard) {
             //generates a random number between 1 and 3
             Random rand = new Random();
@@ -48,6 +48,7 @@ public class Selection {
                 while (scanner.hasNextLine()) {         
                     String line = scanner.nextLine();
                     System.out.println(line);
+                    //return line;
                 }
             }
             else if (n==2){
