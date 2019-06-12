@@ -25,17 +25,17 @@ public class Selection {
         - Medium
         - Hard
         - Very Hard
-        
         Each level has 3 text files, which gets generated randomly 
-        */}
-    Random rand = new Random();
-    int n = rand.nextInt(3);
+        */
+    }
+
     //generates a random number between 0 and 2
 
-
     public void textSelection(){
+        File file=null;
+        Random rand = new Random();
+        int n = rand.nextInt(3);
         if (pressedHard) {
-            File file = null;
             if (n == 0) {
                 file = new File("fileHard1.txt");
             } else if (n == 1) {
@@ -44,10 +44,7 @@ public class Selection {
                 file = new File("fileHard3.txt");
             }
         }
-
-
         else if (pressedVHard) {
-            File file = null;
             if (n == 0) {
                 file = new File("fileVHard1.txt");
             } else if (n == 1) {
@@ -56,10 +53,7 @@ public class Selection {
                 file = new File("fileVHard3.txt");
             }
         }
-
-
         else if (pressedMedium) {
-            File file = null;
             if (n == 0) {
                 file = new File("fileMedium1.txt");
             } else if (n == 1) {
@@ -68,10 +62,7 @@ public class Selection {
                 file = new File("fileMedium3.txt");
             }
         }
-
-
         else if (pressedEasy) {
-            File file = null;
             if (n == 0) {
                 file = new File("fileEasy1.txt");
             } else if (n == 1) {
@@ -80,8 +71,6 @@ public class Selection {
                 file = new File("fileEasy3.txt");
             }
         }
-
-
         Scanner scanner = null;
         try {
             scanner = new Scanner(file);
