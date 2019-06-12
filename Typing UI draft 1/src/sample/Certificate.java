@@ -28,7 +28,7 @@ public class Certificate {
         BaseFont font = BaseFont.createFont(BaseFont.TIMES_ROMAN, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
         BaseFont fontI = BaseFont.createFont(BaseFont.TIMES_ITALIC, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
         //setting the pdf decorations to make it look better
-        String imageSrc = "src\\cert bg 1.jpg";
+        String imageSrc = "src\\cert bg 2.png";
         Image tlCorner = Image.getInstance(imageSrc);
         tlCorner.setAbsolutePosition(0, 717);
         certificate.add(tlCorner);
