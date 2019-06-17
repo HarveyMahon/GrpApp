@@ -14,7 +14,7 @@ public class Main extends Application {
     public Parent root;
 
     public void start(Stage primaryStage) throws Exception{
-        root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        root = FXMLLoader.load(getClass().getResource("secondWindow.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
