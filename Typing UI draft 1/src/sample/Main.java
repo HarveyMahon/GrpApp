@@ -11,9 +11,10 @@ public class Main extends Application {
     //@Override
     public static int charactersTyped;
     public static double accuracy;
+    public Parent root;
 
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
@@ -21,7 +22,6 @@ public class Main extends Application {
         Scoring.calcScore(4,10);
 
     }
-
 
 
 
