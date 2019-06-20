@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.scene.control.Label;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,7 +17,7 @@ public class Selection {
     public static boolean pressedHard;
     public static boolean pressedMedium;
     public static boolean pressedEasy;
-    
+    public Label lblTextOutput;
     //change booleans to methods in the real thing
 
     public static void main(String[] args) {
@@ -31,11 +33,11 @@ public class Selection {
 
     //generates a random number between 0 and 2
 
-    public void textSelection(){
+    public static boolean textSelection(boolean choice){
         File file=null;
         Random rand = new Random();
         int n = rand.nextInt(3);
-        if (pressedHard) {
+        if (choice==pressedHard) {
             if (n == 0) {
                 file = new File("fileHard1.txt");
             } else if (n == 1) {
@@ -62,7 +64,7 @@ public class Selection {
                 file = new File("fileMedium3.txt");
             }
         }
-        else if (pressedEasy) {
+        else if (choice==pressedEasy) {
             if (n == 0) {
                 file = new File("fileEasy1.txt");
             } else if (n == 1) {
@@ -71,6 +73,7 @@ public class Selection {
                 file = new File("fileEasy3.txt");
             }
         }
+        lblTextOutput.setText(file);
         Scanner scanner = null;
         try {
             scanner = new Scanner(file);
@@ -82,6 +85,7 @@ public class Selection {
             String line = scanner.nextLine();
             System.out.println(line);
             //return line;
+         lblTextOutput
         }
     }
 }
