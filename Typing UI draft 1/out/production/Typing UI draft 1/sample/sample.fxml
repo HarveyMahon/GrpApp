@@ -34,7 +34,7 @@
       <Label fx:id="lblTime" text="Time Left" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Label fx:id="lblWords" text="Typing speed (WPM)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
       <Label fx:id="lblErrors" text="Errors/Mistyped words" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-      <Label fx:id="lbltextOutput" alignment="TOP_LEFT" prefHeight="200.0" prefWidth="390.0" text="Text output" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+      <Label fx:id="lblTextOutput" alignment="TOP_LEFT" prefHeight="200.0" prefWidth="390.0" text="Text output" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2" />
       <MenuBar prefWidth="551.0" GridPane.columnSpan="3">
         <menus>
           <Menu fx:id="MenuHome" mnemonicParsing="false" text="Home">

@@ -37,7 +37,6 @@ public class Controller {
             pressedEasy=true;
         }
 
-
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();
@@ -48,6 +47,8 @@ public class Controller {
             } catch (Exception e) {
                 System.out.println("Can't Load new window");
             }
+        Selection.textSelection(true);
         }
-    textSelection(pressedEasy);
+
+
 }
