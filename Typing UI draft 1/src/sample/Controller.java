@@ -43,29 +43,46 @@ public class Controller{
     @FXML
     Label lblTextOutput;
     @FXML
-    public void handleButtonActionTextSelection(ActionEvent event) throws IOException {
+    public void AddCustomText() throws IOException {
+        //getting the user to enter the custom file
+        TextInputDialog dialog = new TextInputDialog("Name here");
+        dialog.setTitle("Username");
+        dialog.setHeaderText("You did great!");
+        dialog.setContentText("Please enter your name:");
+
+        Optional<String> result = dialog.showAndWait();
+        //
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
-        String butPressed = ((Button)event.getSource()).getText();
-        stage.setTitle(butPressed);
+        stage.setTitle("Custom File");
         stage.setScene(new Scene(root1));
         String text = "";
         //setting the string values for the user to type
-        if (butPressed.equals("Easy"))
-            text = Selection.textSelection("Easy");
-        else if (butPressed.equals("Medium"))
-            text = Selection.textSelection("Medium");
-        else if (butPressed.equals("Hard"))
-            text = Selection.textSelection("Hard");
-        else if (butPressed.equals("Very Hard"))
-            text = Selection.textSelection("VHard");
+        text = Selection.textSelection(null, result.get());
         ((Label)root1.getChildrenUnmodifiable().get(5)).setText(text);
         stage.show();
     }
     @FXML
-    public void newTick() {
-
+    public void handleButtonActionTextSelection(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
+        Parent root2 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        String butPressed = ((Button)event.getSource()).getText();
+        stage.setTitle(butPressed);
+        stage.setScene(new Scene(root2));
+        String text = "";
+        //setting the string values for the user to type
+        if (butPressed.equals("Easy"))
+            text = Selection.textSelection("Easy", null);
+        else if (butPressed.equals("Medium"))
+            text = Selection.textSelection("Medium", null);
+        else if (butPressed.equals("Hard"))
+            text = Selection.textSelection("Hard", null);
+        else if (butPressed.equals("Very Hard"))
+            text = Selection.textSelection("VHard", null);
+        ((Label)root2.getChildrenUnmodifiable().get(5)).setText(text);
+        stage.show();
     }
     @FXML
     public void KeyTyped() {

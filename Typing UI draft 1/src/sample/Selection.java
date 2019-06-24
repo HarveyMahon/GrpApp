@@ -3,6 +3,7 @@ package sample;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Random;
 
 public class Selection {
@@ -62,52 +63,58 @@ public class Selection {
 
     //generates a random number between 0 and 2
 
-    public static String textSelection(String pressed) throws IOException {
-        File file=null;
-        Random rand = new Random();
-        int n = rand.nextInt(3);
-        if (pressed == "Hard") {
-            if (n == 0) {
-                file = new File("fileHard1.txt");
-            } else if (n == 1) {
-                file = new File("fileHard2.txt");
-            } else if (n == 2) {
-                file = new File("fileHard3.txt");
-            }
-        }
-        else if (pressed == "VHard") {
-            if (n == 0) {
-                file = new File("fileVHard1.txt");
-            } else if (n == 1) {
-                file = new File("fileVHard2.txt");
-            } else if (n == 2) {
-                file = new File("fileVHard3.txt");
-            }
-        }
-        else if (pressed == "Medium") {
-            if (n == 0) {
-                file = new File("fileMedium1.txt");
-            } else if (n == 1) {
-                file = new File("fileMedium2.txt");
-            } else if (n == 2) {
-                file = new File("fileMedium3.txt");
-            }
-        }
-        else if (pressed == "Easy") {
-            if (n == 0) {
-                file = new File("fileEasy1.txt");
-            } else if (n == 1) {
-                file = new File("fileEasy2.txt");
-            } else if (n == 2) {
+    public static String textSelection(String pressed, String custom) throws IOException {
+        if (pressed != null) {
+            File file = null;
+            Random rand = new Random();
+            int n = rand.nextInt(3);
+            if (pressed == "Hard") {
+                if (n == 0) {
+                    file = new File("fileHard1.txt");
+                } else if (n == 1) {
+                    file = new File("fileHard2.txt");
+                } else if (n == 2) {
+                    file = new File("fileHard3.txt");
+                }
+            } else if (pressed == "VHard") {
+                if (n == 0) {
+                    file = new File("fileVHard1.txt");
+                } else if (n == 1) {
+                    file = new File("fileVHard2.txt");
+                } else if (n == 2) {
+                    file = new File("fileVHard3.txt");
+                }
+            } else if (pressed == "Medium") {
+                if (n == 0) {
+                    file = new File("fileMedium1.txt");
+                } else if (n == 1) {
+                    file = new File("fileMedium2.txt");
+                } else if (n == 2) {
+                    file = new File("fileMedium3.txt");
+                }
+            } else if (pressed == "Easy") {
+                if (n == 0) {
+                    file = new File("fileEasy1.txt");
+                } else if (n == 1) {
+                    file = new File("fileEasy2.txt");
+                } else if (n == 2) {
+                    file = new File("fileEasy3.txt");
+                }
+            } else {
+                System.out.println(pressed);
+                System.out.println("no if hit");
                 file = new File("fileEasy3.txt");
             }
+            return Files.readAllLines(Paths.get(file.getAbsolutePath())).get(0);
         }
         else {
-            System.out.println(pressed);
-            System.out.println("no if hit");
-            file = new File("fileEasy3.txt");
-        }
-        return Files.readAllLines(Paths.get(file.getAbsolutePath())).get(0);
+            String finalString = "";
+            List<String> lines = Files.readAllLines(Paths.get(custom));
+            for (String s:lines) {
+                finalString += s;
+            }
+            return finalString;
         }
     }
+}
 
