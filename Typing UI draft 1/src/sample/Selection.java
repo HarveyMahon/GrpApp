@@ -1,20 +1,11 @@
 package sample;
 
-import javafx.scene.control.Label;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Selection {
-
-    public static boolean pressedVHard;
-    public static boolean pressedHard;
-    public static boolean pressedMedium;
-    public static boolean pressedEasy;
-    public static Label lblTextOutput;
     //change booleans to methods in the real thing
 
 
@@ -71,11 +62,11 @@ public class Selection {
 
     //generates a random number between 0 and 2
 
-    public static void textSelection(boolean choice){
+    public static String textSelection(String pressed) throws IOException {
         File file=null;
         Random rand = new Random();
         int n = rand.nextInt(3);
-        if (choice==pressedHard) {
+        if (pressed == "Hard") {
             if (n == 0) {
                 file = new File("fileHard1.txt");
             } else if (n == 1) {
@@ -84,7 +75,7 @@ public class Selection {
                 file = new File("fileHard3.txt");
             }
         }
-        else if (pressedVHard) {
+        else if (pressed == "VHard") {
             if (n == 0) {
                 file = new File("fileVHard1.txt");
             } else if (n == 1) {
@@ -93,7 +84,7 @@ public class Selection {
                 file = new File("fileVHard3.txt");
             }
         }
-        else if (pressedMedium) {
+        else if (pressed == "Medium") {
             if (n == 0) {
                 file = new File("fileMedium1.txt");
             } else if (n == 1) {
@@ -102,7 +93,7 @@ public class Selection {
                 file = new File("fileMedium3.txt");
             }
         }
-        else if (choice==true) {
+        else if (pressed == "Easy") {
             if (n == 0) {
                 file = new File("fileEasy1.txt");
             } else if (n == 1) {
@@ -111,29 +102,12 @@ public class Selection {
                 file = new File("fileEasy3.txt");
             }
         }
-
-        try{
-            lblTextOutput.setText(readFile("fileEasy1.txt"));
-        } catch (IOException e) {
-            System.out.println("can't load file");
+        else {
+            System.out.println(pressed);
+            System.out.println("no if hit");
+            file = new File("fileEasy3.txt");
         }
-
-
-        /*try {
-            scanner = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            //handle this
-        }
-        //prints out the whole file
-        Scanner scanner = null;
-        scanner=new Scanner("fileEasy1.txt");
-        StringBuilder stringBuilder = new StringBuilder();
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            stringBuilder.append(line);
-
-            System.out.println(line);
-            //return line;*/
+        return Files.readAllLines(Paths.get(file.getAbsolutePath())).get(0);
         }
     }
 

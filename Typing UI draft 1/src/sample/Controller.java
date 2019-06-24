@@ -7,48 +7,36 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 //@FXML
 public class Controller {
-
-    public Button ButEasy;
-
-
-    public static boolean pressedVHard;
-    public static boolean pressedHard;
-    public static boolean pressedMedium;
-    public static boolean pressedEasy;
-    public Label lblTextOutput;
-
-    /*Label lbltextOutput;
-
-    private void thing() {
-        lbltextOutput.setText("hello world");
-    }
-
-    public void logInChanfe() {
-
-    }
-    */
     @FXML
-    public void handleButtonActionTextSelection(ActionEvent event) {
-        if(event.getSource()==ButEasy){
-            pressedEasy=true;
-        }
-
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
-                Parent root1 = (Parent) fxmlLoader.load();
-                Stage stage = new Stage();
-                stage.setTitle("Typing page");
-                stage.setScene(new Scene(root1));
-                stage.show();
-            } catch (Exception e) {
-                System.out.println("Can't Load new window");
-            }
-        Selection.textSelection(true);
-        }
-
-
+    public void handleButtonActionTextSelection(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Typing page");
+        stage.setScene(new Scene(root1));
+        String text = "";
+        //setting the string values for the user to type
+        String butPressed = ((Button)event.getSource()).getText();
+        if (butPressed.equals("Easy"))
+            text = Selection.textSelection("Easy");
+        else if (butPressed.equals("Medium"))
+            text = Selection.textSelection("Medium");
+        else if (butPressed.equals("Hard"))
+            text = Selection.textSelection("Hard");
+        else if (butPressed.equals("Very Hard"))
+            text = Selection.textSelection("VHard");
+        ((Label)root1.getChildrenUnmodifiable().get(5)).setText(text);
+        stage.show();
+    }
 }
