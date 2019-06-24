@@ -32,6 +32,12 @@ public class Controller{
     @FXML
     Label lblTime;
     @FXML
+    Label lblWords;
+    @FXML
+    Label lblErrors;
+    @FXML
+    Label lblTextOutput;
+    @FXML
     public void handleButtonActionTextSelection(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
@@ -57,7 +63,7 @@ public class Controller{
 
     }
     @FXML
-    public void FirstKeyTyped() {
+    public void KeyTyped() {
         if (!FirstPressedYet) {
             FirstPressedYet = true;
             Timeline clock = new Timeline(new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
@@ -65,6 +71,7 @@ public class Controller{
                 @Override
                 public void handle(ActionEvent event) {
                     if (!finishedTask) {
+                        //outputting how much time is left on the clock
                         String mins = lblTime.getText().substring(11, 12);
                         String secs = lblTime.getText().substring(13);
                         int minNum = Integer.parseInt(mins);
@@ -81,11 +88,34 @@ public class Controller{
                         secs = Integer.toString(secsNum);
                         String newTime = mins + ":" + secs;
                         lblTime.setText("Time Left: " + newTime);
+                        //outputting the typing speed of the user
+                        lblWords.setText("Typing Speed (WPM):" + Speed.speedCalc(txtAreaInput.getText().length(), 60 - secsNum));
+                    }
+                    else {
+                        txtAreaInput.setDisable(true);
                     }
                 }
             }));
             clock.setCycleCount(Timeline.INDEFINITE);
             clock.play();
         }
+        //telling the user how many typos they have made
+        String target = lblTextOutput.getText();
+        String current = txtAreaInput.getText();
+        int errors = 0;
+        for (int i = 0; i < current.length(); ++i) {
+            if (current.charAt(i) != target.charAt(i)) {
+                ++errors;
+            }
+        }
+        if (current.length() > 0) {
+            if (current.charAt(current.length() - 1) != target.charAt(current.length() - 1)) {
+                java.awt.Toolkit.getDefaultToolkit().beep();
+                System.out.println(current.charAt(current.length() - 1));
+                System.out.println(target.charAt(current.length() - 1));
+                System.out.println();
+            }
+        }
+        lblErrors.setText("Typos: " + errors);
     }
 }
