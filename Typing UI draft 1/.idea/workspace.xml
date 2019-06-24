@@ -1,38 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Made it so that upon clicking the button to select difficulty a file of that difficulty is loaded into the text box in the next scene">
+      <change afterPath="$PROJECT_DIR$/src/sample/Speed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileEasy1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileEasy2.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileEasy3.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileHard1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileHard2.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileHard3.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileMedium1.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileMedium2.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileMedium3.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileVHard1.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileVHard2.txt.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/fileVHard3.txt.rtf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Selection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Selection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/TextSelection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/TextSelection.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileEasy1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileEasy1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileEasy2.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileEasy2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileEasy3.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileEasy3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileHard1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileHard1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileHard2.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileHard2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileHard3.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileHard3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileMedium1.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileMedium1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileMedium2.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileMedium2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileMedium3.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileMedium3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileVHard1.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileVHard1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileVHard2.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileVHard2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileVHard3.txt.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/fileVHard3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Selection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TextSelection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TextSelection.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="323">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,14 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Certificate.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Speed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -116,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+            <state relative-caret-position="401">
+              <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/TextSelection.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -163,6 +137,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/workspace.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -173,6 +157,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -191,13 +176,10 @@
         <option value="$PROJECT_DIR$/src/sample/highScoring.java" />
         <option value="$PROJECT_DIR$/src/sample/Certificate.java" />
         <option value="$PROJECT_DIR$/src/sample/.idea/secondWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/fileEasy2.txt" />
         <option value="$PROJECT_DIR$/fileEasy1.txt" />
         <option value="$PROJECT_DIR$/fileEasy3.txt" />
         <option value="$PROJECT_DIR$/src/sample/Selection.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/TextSelection.fxml" />
         <option value="$PROJECT_DIR$/fileVHard3.txt" />
         <option value="$PROJECT_DIR$/fileVHard2.txt" />
@@ -207,6 +189,10 @@
         <option value="$PROJECT_DIR$/fileMedium1.txt" />
         <option value="$PROJECT_DIR$/fileHard3.txt" />
         <option value="$PROJECT_DIR$/fileHard2.txt" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Speed.java" />
       </list>
     </option>
   </component>
@@ -239,6 +225,12 @@
               <item name="Typing UI draft 1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Typing UI draft 1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Typing UI draft 1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -254,7 +246,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561380276774" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561383504443" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../itextpdf-5.5.13.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -365,6 +357,14 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
     </task>
+    <task id="LOCAL-00001" summary="Made it so that upon clicking the button to select difficulty a file of that difficulty is loaded into the text box in the next scene">
+      <created>1561380591086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561380591086</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -446,6 +446,8 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="Made it so that upon clicking the button to select difficulty a file of that difficulty is loaded into the text box in the next scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it so that upon clicking the button to select difficulty a file of that difficulty is loaded into the text box in the next scene" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -516,14 +518,6 @@
     <entry file="file://$PROJECT_DIR$/src/sample/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/fileEasy2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -542,36 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="196" lean-forward="true" selection-start-column="196" selection-end-column="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-619">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,6 +598,26 @@
     <entry file="file://$PROJECT_DIR$/fileHard1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-619">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/TextSelection.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -641,6 +625,38 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/util/TimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Speed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

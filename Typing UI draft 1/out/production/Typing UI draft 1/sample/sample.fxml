@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.5921936035156" minWidth="10.0" prefWidth="182.28518676757812" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.11481323242185" minWidth="10.0" prefWidth="209.78037719726566" />
@@ -27,11 +27,11 @@
   </rowConstraints>
    <children>
       <Button fx:id="ButCancel" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-      <TextArea fx:id="txtAreaInput" prefHeight="200.0" prefWidth="390.0" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
+      <TextArea fx:id="txtAreaInput" onKeyTyped="#FirstKeyTyped" prefHeight="200.0" prefWidth="390.0" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
          <GridPane.margin>
             <Insets right="5.0" />
          </GridPane.margin></TextArea>
-      <Label fx:id="lblTime" text="Time Left" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Label fx:id="lblTime" text="Time Left: 1:00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <Label fx:id="lblWords" text="Typing speed (WPM)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
       <Label fx:id="lblErrors" text="Errors/Mistyped words" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
       <Label fx:id="lblTextOutput" alignment="TOP_LEFT" prefHeight="200.0" prefWidth="390.0" text="Text output" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2" />
