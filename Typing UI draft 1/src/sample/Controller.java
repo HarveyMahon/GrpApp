@@ -6,11 +6,13 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextInputDialog;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -19,6 +21,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Optional;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -27,6 +30,8 @@ public class Controller{
     boolean FirstPressedYet = false;
     boolean finishedTask = false;
     Timer timer = new Timer();
+    @FXML
+    Button butCert;
     @FXML
     TextArea txtAreaInput;
     @FXML
@@ -42,11 +47,11 @@ public class Controller{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
-        stage.setTitle("Typing page");
+        String butPressed = ((Button)event.getSource()).getText();
+        stage.setTitle(butPressed);
         stage.setScene(new Scene(root1));
         String text = "";
         //setting the string values for the user to type
-        String butPressed = ((Button)event.getSource()).getText();
         if (butPressed.equals("Easy"))
             text = Selection.textSelection("Easy");
         else if (butPressed.equals("Medium"))
@@ -86,6 +91,7 @@ public class Controller{
                         }
                         mins = Integer.toString(minNum);
                         secs = Integer.toString(secsNum);
+                        if (secs.length() == 1) secs = "0" + secs;
                         String newTime = mins + ":" + secs;
                         lblTime.setText("Time Left: " + newTime);
                         //outputting the typing speed of the user
@@ -93,6 +99,7 @@ public class Controller{
                     }
                     else {
                         txtAreaInput.setDisable(true);
+                        butCert.setDisable(false);
                     }
                 }
             }));
@@ -114,5 +121,31 @@ public class Controller{
             }
         }
         lblErrors.setText("Typos: " + errors);
+    }
+
+    public void trialEnd() {
+        //getting the user's names
+        TextInputDialog dialog = new TextInputDialog("Name here");
+        dialog.setTitle("Username");
+        dialog.setHeaderText("You did great!");
+        dialog.setContentText("Please enter your name:");
+
+        Optional<String> result = dialog.showAndWait();
+        int howManyErrors = Integer.parseInt(lblErrors.getText().substring(7));
+        int accuracy = 100 - Math.round(((float)howManyErrors/(float)txtAreaInput.getText().length()))*100;
+        String difficulty = ((Stage)(lblTextOutput.getScene()).getWindow()).getTitle();
+        String speed = lblWords.getText().substring(19);
+        //create certificate
+        try {
+            //difficulty, name, score
+            System.out.println(accuracy + "%");
+            Certificate.createCertificate(difficulty, result.get(), Integer.parseInt(speed));
+            Process p = Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler Certificate.pdf");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //calc score
+        int score = Scoring.calcScore(txtAreaInput.getText().length(), accuracy);
+        System.out.println(score);
     }
 }

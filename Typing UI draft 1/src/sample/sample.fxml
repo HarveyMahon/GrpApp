@@ -26,7 +26,7 @@
       <RowConstraints maxHeight="107.85199584960935" minHeight="10.0" prefHeight="105.44907226562498" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button fx:id="ButCancel" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Button fx:id="butCert" onMouseClicked="#trialEnd" disable="true" mnemonicParsing="false" text="Get Certificate" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
       <TextArea fx:id="txtAreaInput" onKeyTyped="#KeyTyped" prefHeight="200.0" prefWidth="390.0" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
          <GridPane.margin>
             <Insets right="5.0" />
