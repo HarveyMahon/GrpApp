@@ -15,7 +15,7 @@ public class Main extends Application {
 
     public void start(Stage primaryStage) throws Exception{
         root = FXMLLoader.load(getClass().getResource("TextSelection.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Thema's Typing Tutor");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }

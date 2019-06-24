@@ -18,7 +18,7 @@
   </rowConstraints>
    <children>
       <Button fx:id="ButEasy" mnemonicParsing="false" onAction="#handleButtonActionTextSelection" text="Easy" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-      <Label alignment="CENTER" prefHeight="86.0" prefWidth="276.0" text="Label" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label alignment="CENTER" prefHeight="86.0" prefWidth="276.0" text="Welcome to Thema's Typing Tutor,please select the difficulty of text you would like to be assessed with" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#handleButtonActionTextSelection" text="Medium" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
       <Button mnemonicParsing="false" onAction="#handleButtonActionTextSelection" text="Hard" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
       <Button mnemonicParsing="false" onAction="#handleButtonActionTextSelection" text="Very Hard" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
