@@ -5,11 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/TextSelection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/TextSelection.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Typing UI draft 1/sample/fileEasy1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Selection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/TextSelection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/TextSelection.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/fileEasy1.txt" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -253,7 +248,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561405846078" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561407764818" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../itextpdf-5.5.13.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -406,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561401196563</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made it so that a certificate is cretared and also a score is calculated - but not actually used for anything yet">
+      <created>1561407802907</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561407802907</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
