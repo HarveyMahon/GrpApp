@@ -111,9 +111,6 @@ public class Controller{
         if (current.length() > 0) {
             if (current.charAt(current.length() - 1) != target.charAt(current.length() - 1)) {
                 java.awt.Toolkit.getDefaultToolkit().beep();
-                System.out.println(current.charAt(current.length() - 1));
-                System.out.println(target.charAt(current.length() - 1));
-                System.out.println();
             }
         }
         lblErrors.setText("Typos: " + errors);
